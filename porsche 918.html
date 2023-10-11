@@ -1,1 +1,38 @@
-<!DOCTYPE html>
+
+<style>
+.slider {
+  width: 50%;
+  margin: 25px auto;
+}
+.slide-track {
+  display: flex;
+  width: 250%;
+  animation: scroll 5s linear infinite;
+}
+
+.slide {
+  width: 20%;
+  padding: 10px;
+}
+
+@keyframes scroll {
+  0% {transform: translateX(0);}
+  100% {transform: translateX(calc(-20% * 5));}
+}
+</style>
+
+<div class="slider">
+  <div class="slide-track">
+    <div class="slide">
+      <img src="918 foto 1.jpeg" alt="918 foto 1" />
+    </div>
+    <div class="slide">
+      <img src="918 foto 2.jpeg" alt="918 foto 2" />
+    </div>
+    <div class="slide">
+      <img src="918 foto 3.jpeg" alt="918 foto 3" />
+    </div>
+    <!-- Add more .slide divs as needed for more images in your slideshow -->
+  </div>
+</div>
+
